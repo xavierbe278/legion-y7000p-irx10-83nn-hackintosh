@@ -21,6 +21,7 @@
 
 | 文件 | 用途 | 说明 |
 |---|---|---|
+| **`EFI-OC-sanitized.zip`** | **完整的 EFI/OC 打包**（含 ACPI、Kexts、Drivers、Tools、去隐私 config） | 解压后直接替换 `EFI/OC`，别忘自己填三码 |
 | `configs/config.sanitized.plist` | 我当前在用的完整 OpenCore 配置 | **已清空序列号 / MLB / SystemUUID / ROM**，用之前自己填三码 |
 | `patches/SSDT-PTSFix.aml` | 关机修复 SSDT（`_PTS→ZPTS` + 清 XHCI `PMEE`） | 直接放进 `EFI/OC/ACPI` 并在 config 里启用 |
 | `scripts/fix-windows-time.ps1` | 双系统时间差 8 小时修复 | Windows 管理员 PowerShell 运行 |

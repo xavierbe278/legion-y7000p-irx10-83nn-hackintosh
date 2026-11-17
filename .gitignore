@@ -18,3 +18,6 @@ scratch/
 build/
 *.o
 *.dSYM/
+
+# 允许随仓库分发的去隐私 EFI 包
+!EFI-OC-sanitized.zip
